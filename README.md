@@ -1,31 +1,21 @@
-# Basic Calculator Program
+# 🧮 Basic Calculator Program
 
-# Ask the user for two numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+## 📌 Description
+This is a simple **Python calculator** that:
+- Takes two numbers from the user
+- Asks for a mathematical operation (`+`, `-`, `*`, `/`)
+- Performs the calculation
+- Displays the result
 
-# Ask the user for the operation
-operation = input("Enter an operation (+, -, *, /): ")
+It also handles **division by zero errors** and invalid operation inputs gracefully.
 
-# Perform the chosen operation
-if operation == "+":
-    result = num1 + num2
-    print(f"{num1} + {num2} = {result}")
+---
 
-elif operation == "-":
-    result = num1 - num2
-    print(f"{num1} - {num2} = {result}")
+## 🚀 How to Run
+1. Make sure you have **Python 3** installed on your computer.
+2. Save the program in a file called `calculator.py`.
+3. Open a terminal or command prompt in the same directory.
+4. Run the program using:
 
-elif operation == "*":
-    result = num1 * num2
-    print(f"{num1} * {num2} = {result}")
-
-elif operation == "/":
-    if num2 != 0:
-        result = num1 / num2
-        print(f"{num1} / {num2} = {result}")
-    else:
-        print("Error: Division by zero is not allowed.")
-
-else:
-    print("Invalid operation. Please enter +, -, * or /.")
+```bash
+python calculator.py
